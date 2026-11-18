@@ -1,0 +1,17 @@
+name: Boomerang
+version: 1.2.0
+main: dev.boomerang.BoomerangPlugin
+api-version: '26.1'
+description: Бумеранги (медный, железный, алмазный) — отскакивают от стен 3 раза и возвращаются
+commands:
+  boomerang:
+    description: Выдать бумеранг или перезагрузить настройки
+    usage: /boomerang give <copper|iron|diamond> [игрок] | /boomerang reload
+    aliases: [bmr]
+permissions:
+  boomerang.give:
+    description: Выдача бумерангов
+    default: op
+  boomerang.admin:
+    description: Перезагрузка настроек
+    default: op
